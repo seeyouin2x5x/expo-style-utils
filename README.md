@@ -1,11 +1,11 @@
-# @expo/pseudo-classes
+# @expo/style-utils
 
-Component for reacting to pseudo-classes in the browser. Based on the [hoverable element](https://codesandbox.io/s/o9q8vy70l5) by @necolas.
+Components for reacting to pseudo-classes and observable styles in React Native.
 
 ## Installation
 
 ```bash
-yarn add @expo/pseudo-classes
+yarn add @expo/style-utils
 ```
 
 ### Usage
@@ -13,7 +13,7 @@ yarn add @expo/pseudo-classes
 Import the library into your JavaScript file:
 
 ```js
-import { Hoverable, Resizable } from '@expo/pseudo-classes';
+import { Hoverable, Resizable } from '@expo/style-utils';
 ```
 
 You can wrap a function or a component.
@@ -21,7 +21,7 @@ You can wrap a function or a component.
 ```tsx
 import React, { Component } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
-import { Hoverable } from '@expo/pseudo-classes';
+import { Hoverable } from '@expo/style-utils';
 
 const createLogger = (...msg) => () => {
   console.log(...msg);
@@ -42,4 +42,14 @@ class App extends Component {
     );
   }
 }
+```
+
+Observe window resize events.
+
+```tsx
+return (
+  <Resizable>
+    {layout => <View style={{ width: layout.width / 2, height: layout.width / 2 }} />}
+  </Resizable>
+);
 ```

@@ -1,3 +1,3 @@
-export function isHoverEnabled(): boolean {
+export function isHoverEnabled() {
   return false;
 }

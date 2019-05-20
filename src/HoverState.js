@@ -1,7 +1,7 @@
-// By @necolas: 
+// By @necolas:
 // https://github.com/necolas/react-native-web/blob/master/docs/guides/web-recipes.md
 
-import { canUseDOM } from "fbjs/lib/ExecutionEnvironment";
+import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment';
 
 let isEnabled = false;
 
@@ -31,11 +31,11 @@ if (canUseDOM) {
     }
   }
 
-  document.addEventListener("touchstart", disableHover, true);
-  document.addEventListener("touchmove", disableHover, true);
-  document.addEventListener("mousemove", enableHover, true);
+  document.addEventListener('touchstart', disableHover, true);
+  document.addEventListener('touchmove', disableHover, true);
+  document.addEventListener('mousemove', enableHover, true);
 }
 
-export function isHoverEnabled(): boolean {
+export function isHoverEnabled() {
   return isEnabled;
 }

@@ -2,6 +2,7 @@
   "name": "@expo/style-utils",
   "version": "1.0.0-alpha.0",
   "sideEffects": false,
+  "private": false,
   "description": "Components for reacting to pseudo-classes and observable styles in React Native",
   "author": "Evan Bacon <bacon@expo.io> (https://expo.io/)",
   "homepage": "https://github.com/expo/expo-style-utils",

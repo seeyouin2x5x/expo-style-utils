@@ -1,11 +1,11 @@
-# @expo/hoverable
+# @expo/pseudo-classes
 
-Component for hovering over elements in the browser. Based on the [hoverable element](https://codesandbox.io/s/o9q8vy70l5) by @necolas.
+Component for reacting to pseudo-classes in the browser. Based on the [hoverable element](https://codesandbox.io/s/o9q8vy70l5) by @necolas.
 
 ## Installation
 
 ```bash
-yarn add @expo/hoverable
+yarn add @expo/pseudo-classes
 ```
 
 ### Usage
@@ -13,7 +13,7 @@ yarn add @expo/hoverable
 Import the library into your JavaScript file:
 
 ```js
-import Hoverable from '@expo/hoverable';
+import { Hoverable, Resizable } from '@expo/pseudo-classes';
 ```
 
 You can wrap a function or a component.
@@ -21,7 +21,7 @@ You can wrap a function or a component.
 ```tsx
 import React, { Component } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
-import Hoverable from '@expo/hoverable';
+import { Hoverable } from '@expo/pseudo-classes';
 
 const createLogger = (...msg) => () => {
   console.log(...msg);

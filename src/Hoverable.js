@@ -1,11 +1,11 @@
 // By @necolas:
 // https://github.com/necolas/react-native-web/blob/master/docs/guides/web-recipes.md
 import { element, func, oneOfType } from 'prop-types';
-import React, { Component } from 'react';
+import * as React from 'react';
 
 import { isHoverEnabled } from './HoverState';
 
-export default class Hoverable extends Component {
+export default class Hoverable extends React.Component {
   static displayName = 'Hoverable';
   static propTypes = {
     children: oneOfType([func, element]),

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { element, func, oneOfType, oneOf } from 'prop-types';
+import { Dimensions } from 'react-native';
 
 export default class Resizable extends React.Component {
   static displayName = 'Resizable';
